@@ -10,20 +10,11 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        arr=[]
-        if not head:return head
         curr=head
+        pre=None
         while curr:
-            arr.append(curr.val)
+            temp=ListNode(curr.val)
+            temp.next=pre
+            pre=temp
             curr=curr.next
-        arr=arr[::-1]
-        h=None
-        for i in arr:
-            if not h:
-                h=ListNode(i)
-                a=h
-            else:
-                h.next=ListNode(i)
-                h=h.next
-        return a
-            
+        return pre
