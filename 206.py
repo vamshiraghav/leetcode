@@ -13,8 +13,10 @@ class Solution(object):
         curr=head
         pre=None
         while curr:
-            temp=ListNode(curr.val)
-            temp.next=pre
-            pre=temp
+            a=curr
             curr=curr.next
+            #temp=a
+            a.next=pre
+            pre=a
+            
         return pre
