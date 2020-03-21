@@ -5,7 +5,7 @@ class ListNode:
         self.next = None
 
 class Solution:
-    def nextLargerNodes(self, head: ListNode) -> List[int]:
+    def nextLargerNodes(self, head):
         returnList = []
         stack = []
         while head:
