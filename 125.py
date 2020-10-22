@@ -3,6 +3,7 @@ class Solution(object):
         """
         :type s: str
         :rtype: bool
+	test
         """
         st=""
         st=''.join(e for e in s if e.isalnum()).lower()
